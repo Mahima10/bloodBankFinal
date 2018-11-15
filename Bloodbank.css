@@ -1,0 +1,92 @@
+.input {
+    		margin-left: 30px;
+
+    	}
+
+#btnSave {
+    		margin-left: 40px;
+    	}
+
+#lblBlood { }
+
+#lblBottles, #lblBlood{ padding: 5px; 
+    	 }
+
+#reqdBottleCount, #bloodSelection { width: 50px;
+    	height: 20px;
+    	
+    	}
+
+#dropzone {  /*bucket*/
+    	
+    	border-left: solid;
+    	border-right: solid;
+    	border-bottom: solid;
+    	height: 100px;
+    	width: 200px;
+    	float: right;
+    }
+    
+.lbl { 
+    	 padding: 10px; /* top-margin not se */
+
+        }
+
+.qty {
+    	height: 40px;
+    	position: absolute;
+    }
+    
+#div1{ margin-top: 30px;
+     }
+    	
+#BloodGroupdragme,#BottleCountdragme
+{
+
+}
+
+#left{
+
+    
+
+}
+#left,#right {
+	width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+	 box-sizing: border-box;
+    border: 2px solid red;
+    border-radius: 4px;
+
+}
+
+select {
+	width: 100%;
+	border: none;
+    border-radius: 4px;
+    color: black;
+}
+
+.input {  border-radius: 4px;}
+
+input[type=button] {
+    background-color: #4CAF50;
+    border: none;
+    
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#reqdBottleCount {
+	
+    padding: 1px 1px ;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+
+#left,#right{height: 100%; width :40%; background-color:#7eddb6; border-radius: 20px}
+		  	#left{position: absolute; left: 5%}
+		    #right{position: absolute; right: 5%}

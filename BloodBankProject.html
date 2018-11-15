@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Blood Bank </title>
+	<link rel="stylesheet" type="text/css" href="Bloodbank.css">
+</head>
+<body>
+
+<div id="left"> <!--Here , can update blood bottle Count -->
+	<form action="#" >
+    	<h4> Enter the available Bottles for a BloodGroup </h4>
+    	A+ : <input type="number" min="0" value="" id="A+" class="input" /> <br> <br>
+    	B+ : <input type="number" min="0" value="" id="B+" class="input"/> <br> <br>
+    	O+ : <input type="number" min="0" value="" id="O+" class="input"/> <br> <br> 
+    	AB+: <input type="number" min="0" value="" id="AB+" class="input"/> <br> <br>
+    	A- : <input type="number" min="0" value=""  id="A-" class="input"/> <br> <br>
+    	B- : <input type="number" min="0" value="" id="B-" class="input"/> <br> <br>
+    	O- : <input type="number" min="0" value=""  id="O-" class="input"/> <br> <br>
+    	AB- :<input type="number" min="0" value="" id="AB-" class="input"/> <br> <br> <br>
+    	<input type="button" onclick="processing()" value="Save">
+
+    </form>
+</div>
+
+<div id="right"> <!-- Putting Required Blood Bottles in Bucket  -->
+
+	    <div id="div1"> 
+	    <h4 > Available BLOOD GROUPS and BOTTLES </h4> <br> <br>
+
+   		<label id="lbl"  style="border : 1px solid"> A+ </label> &ensp;
+   		<label id="lblA+" style="border : 1px solid"> 4</label> &ensp; &ensp;
+
+        <label id="lbl1" style="border : 1px solid "> B+ </label> &ensp;
+   		<label id="lblB+" style="border : 1px solid "> 5</label> &ensp;&ensp;
+   	   
+   		<label id="lbl2" style="border : 1px solid "> O+ </label> &ensp;
+   		<label id="lblO+" style="border : 1px solid ">3</label> &ensp; &ensp;
+   
+        <label id="lbl3" style="border : 1px solid "> AB+ </label> &ensp;
+   		<label id="lblAB+" style="border : 1px solid ">8 </label> &ensp;&ensp;
+     	</div>
+     
+        <br> <br>
+
+   	    <div id="div2"> 
+   		<label id="lbl4" style="border : 1px solid "> A- </label> &ensp;
+   		<label id="lblA-" style="border : 1px solid ">2</label> &ensp; &ensp;
+   	   
+        <label id="lbl5" style="border : 1px solid "> B- </label> &ensp;
+   		<label id="lblB-" style="border : 1px solid ">9 </label> &ensp; &ensp;
+   	 	
+        <label id="lbl6" style="border : 1px solid "> O- </label> &ensp;
+   		<label id="lblO-" style="border : 1px solid "> 4</label> &ensp; &ensp;
+ 
+        <label id="lbl7" style="border : 1px solid "> AB- </label> &ensp;
+   		<label id="lblAB-" style="border : 1px solid ">1 </label> &ensp; &ensp;
+   	    </div>
+
+        <br>
+
+<div>
+    <h4 style="font-weight: bold;"> REQUIREMENT FORM </h4>
+</div> <br>
+
+<div>
+<label id="lblBlood" style="border : 1px solid ;" > Blood required </label> &ensp;  &ensp;  &ensp;
+<select id="bloodSelection">
+    <option > A+ </option>
+    <option > B+ </option>
+    <option > O+ </option>
+    <option > AB+ </option>
+    <option > A- </option>
+    <option > B- </option>
+    <option > O- </option>
+    <option > AB- </option>
+</select>
+</div> <br>
+
+<div>
+    <label id="lblBottles" style="border : 1px solid  " ; border-radius: 4px; > Number of bottles  </label> &ensp; &ensp;
+    <input id="reqdBottleCount" min="0" type="number" value=""/>
+</div> <br>
+    
+<input type="button" id="btndrag" onclick="settingLabels()" value="Drag"> <br> <br> &ensp;
+
+<div id="BloodGroupdragme" draggable="true">
+<label id="labelBloodGroup"> </label> &ensp; <br>
+<label id="labelBottleCount"> </label>
+</div>
+
+<div id="dropzone">  </div> <br> <br> <br> <br> <br> <br> 
+    
+</div>
+
+<script type="text/javascript" src="Bloodbank.js">
+</script>
+</body>
+</html>
